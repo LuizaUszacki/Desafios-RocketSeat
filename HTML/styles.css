@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    Variables     */
+:root {
+    --main-color: #333;
+    --details-color: hsla(1, 59%, 55%, 0.9);
+    --details-color-darker: hsla(1, 59%, 35%, 0.9);
+    --border-color: rgb(130, 130, 130);
+}
+
+/*    Main     */
+
+html, body {
+    background-color: hsl(53, 25%, 94%);
+    overflow-x: hidden;
+}
+
+body {   
+    font-family: sans-serif;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 3rem;
+}
+
+body::before {
+    content: '';
+    display: block;
+    height: 5rem;
+}
+
+main {
+    min-height: calc(100vh - 6rem);
+    padding-block: 5rem;
+    flex-direction: column;
+    display: flex;
+    place-items: center;
+}
+
+/*    Header     */
+header {
+    position: absolute;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    height: 5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+.item-menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: .6rem 1rem;
+    transition: letter-spacing 0.5s, text-shadow 0.5s;
+}
+
+.item-menu:hover {
+    letter-spacing: .15rem;
+    text-shadow: 0 0 .4rem #fff;
+}
+
+.active {
+    background-color: var(--details-color);
+    border-radius: 50px;
+    box-shadow: inset 0 0 .6rem var(--details-color-darker);
+}
+
+.item-menu#blog {
+    color: var(--details-color);
+}
+
+nav {
+    background-color: var(--main-color);
+    width: 100vw;
+}
+
+/*    Glossary     */
+
+dd {
+    margin-bottom: 2.5rem;
+}
+
+.read-more, 
+#submit-form-contact, 
+#submit-form-quiz {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--details-color);
+    color: #fff;
+    padding: .4rem .8rem;
+    margin-top: .8rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+#submit-form-contact,
+#submit-form-quiz {
+    font-size: 1.1rem;
+}
+
+h1, dt {
+    color: var(--main-color);
+}
+
+dt {
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: .6rem;
+}
+
+/*    Shopping List     */
+
+.shop-list input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+    color: var(--border-color);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8rem;
+}
+
+.topic-container, .subscribe-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+/*    Contact     */
+
+#form-contact label, #form-contact legend {
+    font-weight: 500;
+    padding-right: .4rem;
+    color: var(--main-color);
+}
+
+#form-contact fieldset {
+    padding: 1rem 2rem;
+}
+
+#form-contact input {
+    border-radius: 1rem;
+    padding: .4rem .8rem;
+    border: 1px solid var(--border-color);
+}
+
+/*    Quiz     */
+#form-quiz {
+    width: 50vw;
+}
+
+#form-quiz ol li h3 {
+    margin-block: 2.5rem 1rem;
+}
+
+#submit-form-quiz {
+    margin-top: 4rem;
+}
+
+/*    Footer     */
+
+footer {
+    background-color: var(--main-color);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    word-spacing: .1rem;
+}
+
+footer .fa-heart {
+    color: var(--details-color);
+}
+
+footer span {
+    color: var(--details-color);
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* Blog Post */
+.row {
+    width: 80vw;
+    margin: auto;
+}
+
+.blog hr {
+    margin: 2rem 0;
+}
+
+.blog blockquote {
+    background-color: #ddd;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: .5rem;
+}
+
+.blog blockquote p {
+    text-align: justify;
+}
+
+.blog blockquote cite {
+    display: block;
+    text-align: end;
+    margin-top: 1rem;
+}
+
+.blog .text {
+    margin-bottom: 1rem;
+}
+
+.blog article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog aside {
+    background-color:#ddd;
+    border: 1px solid #333;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.blog aside figure {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog aside img {
+    border-radius: 10px;
+    margin: .3rem 0;
+    border: 1px solid #333;
+}
+
+.blog h2 {
+    color: var(--details-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.blog footer p {
+    text-align: center;
+}
+
+.blog header {
+    background-color: var(--main-color);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog header .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog h1 {
+    color: var(--details-color);
+    margin: 0;
+    display: inline-block;
+}
+
+.blog nav {
+    width: 50%;
+}
+
+.blog header a {
+    color: #fff;
+    text-decoration: none;
+}

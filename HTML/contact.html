@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, Desafio, Rocketseat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Luiza Pereira Uszacki">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="item-menu">Home</a></li>
+                <li><a href="./glossary.html" class="item-menu">Glossário</a></li>
+                <li><a href="./contact.html" class="item-menu active">Formulário de contato</a></li>
+                <li><a href="./shopping-list.html" class="item-menu">Lista de compras</a></li>
+                <li><a href="./quiz.html" class="item-menu">Quiz</a></li>
+                <li><a href="./blog-post.html" class="item-menu" id="blog" target="_blank">Blog Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulário de Contato</h1>
+        <form id="form-contact" action="" method="POST">
+            <fieldset>
+                <legend>Entre em contato</legend>
+
+                <div class="topic-container form-field">
+                    <label for="topic">Assunto:</label>
+                    <select name="topic" id="topic">
+                        <option value="suport">Suporte</option>
+                        <option value="suggestion">Sugestão</option>
+                        <option value="complaint">Reclamação</option>
+                    </select>
+                </div>
+
+                <div class="name-container form-field">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" minlength="8" maxlength="50" required>    
+                </div>
+
+                <div class="email-container form-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@sudominio.com" minlength="8" maxlength="50"  required>    
+                </div>
+
+                <div class="message-container form-field">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" style="resize: none;" required></textarea>    
+                </div>
+
+                <div class="subscribe-container form-field">
+                    <input type="checkbox" name="subscribe" id="subscribe" required>
+                    <label for="subscribe">Aceito receber novidades por e-mail</label>
+                </div>
+
+                <button type="submit" id="submit-form-contact">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            Made with
+            <i class="fa-solid fa-heart"></i>
+            by
+            <span>Luiza Pereira Uszacki</span>
+        </p>
+    </footer>
+</body>
+</html>

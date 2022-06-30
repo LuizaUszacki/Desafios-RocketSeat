@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, Desafio, Rocketseat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Luiza Pereira Uszacki">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="item-menu">Home</a></li>
+                <li><a href="./glossary.html" class="item-menu">Glossário</a></li>
+                <li><a href="./contact.html" class="item-menu">Formulário de contato</a></li>
+                <li><a href="./shopping-list.html" class="item-menu">Lista de compras</a></li>
+                <li><a href="./quiz.html" class="item-menu active">Quiz</a></li>
+                <li><a href="./blog-post.html" class="item-menu" id="blog" target="_blank">Blog Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Quiz</h1>
+        <form id="form-quiz" action="">
+            <ol>
+                <li>
+                    <h3>Um avião cai na fronteira do México e Estados Unidos, em que país se enterram os sobreviventes?</h3>
+                    <div>
+                        <input type="radio" name="question-1" id="mexico">
+                        <label for="mexico">México</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1" id="usa">
+                        <label for="usa">Estados Unidos</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1" id="country-people-from">
+                        <label for="country-people-from">No país de origem</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1" id="neither">
+                        <label for="neither">Nenhum dos dois</label>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>O que vai na torradeira?</h3>
+                    <div>
+                        <input type="radio" name="question-2" id="toast">
+                        <label for="toast">Torrada</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2" id="sandwich">
+                        <label for="sandwich">Sanduíche</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2" id="pudding">
+                        <label for="pudding">Pudim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2" id="cheese-bread">
+                        <label for="cheese-bread">Pão-de-queijo</label>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Você entra em um castelo escuro com uma caixa de fósforos que contém apenas um palito. Não há eletricidade, porém há uma vela, um lampião a gás e uma lamparina a querosene. O que você acende primeiro?</h3>
+                    <div>
+                        <input type="radio" name="question-3" id="candle">
+                        <label for="candle">Vela</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3" id="gas-lamp">
+                        <label for="gas-lamp">Lampião a gás</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3" id="old-lantern">
+                        <label for="old-lantern">Lamparina a querosene</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3" id="fire-stick">
+                        <label for="fire-stick">Fósforo</label>
+                    </div>
+                </li>
+            </ol>
+            <button id="submit-form-quiz" type="submit">Enviar</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            Made with
+            <i class="fa-solid fa-heart"></i>
+            by
+            <span>Luiza Pereira Uszacki</span>
+        </p>
+    </footer>
+</body>
+</html>
